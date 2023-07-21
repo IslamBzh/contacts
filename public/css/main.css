@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+}
+
+:root {
+    --root-backgraund: #eceff4;
+
+    --c-backgraund: #fff;
+
+    --border-color: #d7d7d7;
+    --box-shadow: 0 0 0.375rem 0.25rem rgb(161 172 184 / 15%);
+    --transition: all 0.3s linear;
+    --text-color: #000;
+
+
+    --input-border-color: var(--border-color);
+    --input-placeholder-color: #b6b6b6;
+
+    --btn-backgraund: #4d59a1;
+}
+
+
+html {
+    display: block;
+}
+
+body {
+    font-family: Comfortaa;
+    color: var(--text-color);
+
+    background: var(--root-backgraund);
+
+    margin: 0;
+    top: 0;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+a.link,
+a:hover {
+    opacity: 0.8;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#content {
+    padding: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    width: 320px;
+    background: var(--c-backgraund);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow)
+}
+
+.container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.container__title {
+    height: 60px;
+    padding: 20px 25px;
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.container__form {
+    padding: 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__form input {
+    margin-top: 1rem;
+}
+
+input,
+input:focus,
+input:active {
+    padding: 0.5rem;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px var(--input-border-color);
+}
+
+input:focus::placeholder {
+    padding-left: 2px;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background: var(--btn-backgraund);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 50%;
+    margin-left: auto;
+}
+
+input[type="submit"]:hover {
+    /*    color: var(--btn-backgraund);*/
+    background: #000;
+}

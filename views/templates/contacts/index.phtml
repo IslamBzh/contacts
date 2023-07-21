@@ -1,0 +1,31 @@
+<div class="container">
+    <p class="container__title">Добавить контакт</p>
+
+    <form class="container__form" autocomplete="off" action="/contacts/api/create">
+        <input name="name"
+            type="text"
+            placeholder="Имя"
+            maxlength="64"
+            autocomplete="off"
+            required
+        >
+
+        <input name="phone_number"
+            type="phone_number"
+            placeholder="Телефон"
+            autocomplete="off"
+            required
+        >
+
+        <input name="create"
+            type="submit"
+            value="Добавить"
+        >
+    </form>
+</div>
+
+<div class="container" >
+    <p class="container__title">Список контактов <span id="contacts_count" class="contacts__count">0</span></p>
+
+    <div id="contacts" class="contacts"></div>
+</div>
