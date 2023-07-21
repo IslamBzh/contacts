@@ -11,12 +11,6 @@ class Contacts {
 
     public function actionIndex(){
 
-        $contacts = Model::getAll();
-
-        // echo "<pre>";
-        // var_dump($contacts);
-        // exit;
-
         return [];
     }
 

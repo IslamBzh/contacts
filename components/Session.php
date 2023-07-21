@@ -2,8 +2,8 @@
 
 namespace components;
 
-// ini_set('session.cookie_httponly', 1);
-// ini_set('session.cookie_secure', 1);
+ini_set('session.cookie_httponly', 1);
+ini_set('session.cookie_secure', 1);
 
 class Session{
 
@@ -32,9 +32,6 @@ class Session{
         $time   = substr($csrf_decode, strpos($csrf_decode, '|') + 1);
 
         $gen    = base64_encode(md5($token_private . $time . $token_public) . '|' . $time);
-
-        // if($time < time() - 300)
-        //     return false;
 
         return ($csrf == $gen);
     }

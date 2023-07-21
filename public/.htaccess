@@ -25,8 +25,3 @@ RewriteRule ^(.*)\/$ /$1 [R=301,L]
 
 RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI} !-f
 RewriteRule (.*) index.php [L,QSA]
-
-ErrorDocument 404 /error/404
-ErrorDocument 403 /error/403
-ErrorDocument 401 /error/401
-ErrorDocument 500 /error/500
