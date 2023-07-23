@@ -7,23 +7,23 @@ class db {
     /**
      * IP адрес сервера БД
      */
-    const HOST  = '';
+    const HOST  = 'localhost';
 
 
     /**
      * Название таблицы БД
      */
-    const NAME  = '';
+    const NAME  = 'test2';
 
 
     /**
      * Имя пользователя БД
      */
-    const USER  = '';
+    const USER  = 'test2';
 
 
     /**
      * Пароль пользователя БД
      */
-    const PASS  = '';
+    const PASS  = 'PassWD123';
 }

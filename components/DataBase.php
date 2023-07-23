@@ -121,7 +121,7 @@ class DataBase {
 
         $wheres = implode($and ? ' AND ' : ' OR ', $wheres);
 
-        $sql    = "DELETE FROM `contacts` WHERE {$wheres}";
+        $sql    = "DELETE FROM {$table_name} WHERE {$wheres}";
 
         // return [$sql, $where];
 

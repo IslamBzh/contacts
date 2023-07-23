@@ -40,6 +40,29 @@ body {
     min-height: 100vh;
 }
 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: #a4b1eb;
+    padding: 0.5rem 1rem;
+
+    height: 60px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header li:not(:last-child) {
+    margin-right: 1rem;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
