@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <dev id="content">
+    <div id="content">
         <? $this->loadTmpl() ?>
     </div>
 </body>
